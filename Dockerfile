@@ -16,3 +16,5 @@ RUN go-wrapper download \
           export GOARCH=amd64 ;\
           go build -o ${GOBIN}/crane-$GOOS-$GOARCH main.go ;\
        done;
+
+CMD ["ls", "bin"]
